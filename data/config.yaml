@@ -18,9 +18,10 @@ search:
   operandApiKey: "ixobco2pk2gqtffdqlh8wtoyfaxk2enucsiw"
   operandIndexId: "4stdelwna246"
 description:
-  Ha olvasok valamit - és ebből vagy tanulok, vagy nem -, lehet hogy itt jegyzetelek róla.
+  "Ha olvasok valamit - és ebből vagy tanulok, vagy nem -, lehet hogy 
+  itt jegyzetelek róla."
 page_title:
-  "Zsoltika tudásbázisa""
+  "Zsoltika tudásbázisa"
 links:
   - link_name: Twitter
     link: https://twitter.com/botykai_zsolt
