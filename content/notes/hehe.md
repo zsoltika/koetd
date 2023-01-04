@@ -5,6 +5,6 @@ tags:
 - images
 ---
 
-![[notes/images/homeopatikuscomic.png]]
+![[images/homeopatikuscomic.png]]
 
-![[notes/images/robinhod.jpg]]
+![[images/robinhod.jpg]]
