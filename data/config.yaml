@@ -14,7 +14,7 @@ enableGitHubEdit: true
 enableMermaid: true
 GitHubLink: https://github.com/zsoltika/koetd/tree/hugo/content
 search:
-  enableSemanticSearch: true
+  enableSemanticSearch: false
   operandApiKey: "ixobco2pk2gqtffdqlh8wtoyfaxk2enucsiw"
   operandIndexId: "65q7o6z8k693"
 description:
