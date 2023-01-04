@@ -1,5 +1,6 @@
 ---
 title: "Search"
+draft: true
 ---
 
 Quartz supports two modes of searching through content.

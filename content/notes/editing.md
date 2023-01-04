@@ -3,6 +3,7 @@ title: "Editing Content in Quartz"
 tags:
 - setup
 weight: -4
+draft: true
 ---
 
 ## Editing 

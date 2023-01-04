@@ -3,6 +3,7 @@ title: "Configuration"
 tags:
 - setup
 weight: 0
+draft: true
 ---
 
 ## Configuration
