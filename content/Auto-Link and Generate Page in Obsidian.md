@@ -5,19 +5,19 @@ url: https://www.thoughtasylum.com/2022/03/29/auto-link-and-generate-page-in-obs
 
 29 Mar 2022
 
-Last year I wrote a post about [automation with Templater for Obsidian](https://www.thoughtasylum.com/2021/07/10/automation-with-templater-for-obsidian/). I showed some examples of using Obsidian’s Templater plugin to do some automation a little bit beyond what you might typically consider as the basics. One of the things in one of the examples bugged me for quite a while, and in this post I’m going to go through how I improved things for creating a link to a new page, and the correctly filed new page at the same time.
+Last year I wrote a post about [[archive/www_thoughtasylum_com.Automation with Templater for Obsidian  ThoughtAsylumAutomation with Templater for Obsidian  ThoughtAsylum|automation with Templater for Obsidian]]. I showed some examples of using Obsidian’s Templater plugin to do some automation a little bit beyond what you might typically consider as the basics. One of the things in one of the examples bugged me for quite a while, and in this post I’m going to go through how I improved things for creating a link to a new page, and the correctly filed new page at the same time.
 
 ## The Old Approach
 
-For my work, I keep a running daily list of what I have been doing in a [daily note](https://help.obsidian.md/Plugins/Daily+notes). This often includes links to meetings, and many of the meetings I have follow a standard template, with the same agenda, participants, etc. For example a weekly resourcing meeting.
+For my work, I keep a running daily list of what I have been doing in a [[archive/help_obsidian_md.Daily notes - Obsidian Help|daily note]]. This often includes links to meetings, and many of the meetings I have follow a standard template, with the same agenda, participants, etc. For example a weekly resourcing meeting.
 
-In my original approach, I used the [Templater plugin](https://github.com/SilentVoid13/Templater) to create a link to the note, and the note itself. The tricky bit was the filing of the note into the correct folder. While the functionality I was using was capable of doing this, I couldn’t find a way to do it easily and so I resorted to adding a Templater line to the template used to generate the note to file the note.
+In my original approach, I used the [[archive/github_com.GitHub - SilentVoid13Templater A template plugin for obsidian|Templater plugin]] to create a link to the note, and the note itself. The tricky bit was the filing of the note into the correct folder. While the functionality I was using was capable of doing this, I couldn’t find a way to do it easily and so I resorted to adding a Templater line to the template used to generate the note to file the note.
 
 This worked fine for months, and then I started getting a timing issue. I would end up with the link, and the filed note, but also an additional copy in the root folder.
 
 ## The New Approach
 
-After getting nowhere with the timing, which I suspect was due to an update in the Templater plugin, I returned to investigating the original issue. This was that the Templater [`tp.file.create_new()`](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/file-module.html#tpfilecreate_newtemplate-tfile--string-filename-string-open_new-boolean--false-folder-tfolder) function could create files in particular folders, but those folders had to be defined as a `TFolder` and that was the not so trivial aspect.
+After getting nowhere with the timing, which I suspect was due to an update in the Templater plugin, I returned to investigating the original issue. This was that the Templater [[archive/silentvoid13_github_io.|`tp.file.create_new()`]] function could create files in particular folders, but those folders had to be defined as a `TFolder` and that was the not so trivial aspect.
 
 After digging through Obisidian and Templater documentation I finally found a way to produce a `TFolder` object based on a path. For example, this would identify a folder _bar_, in the folder _foo_, of the current vault:
 
