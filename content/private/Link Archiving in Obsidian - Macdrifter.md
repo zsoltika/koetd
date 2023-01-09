@@ -21,17 +21,17 @@ The plugin processes every link in a document which is very convenient.
 
 If I want to be completely self sufficient I can use the Extract URL Content plugin to grab a Markdown copy of the page. This is a destructive plugin because it overwrites the current note with the Markdown, so I don’t recommend running it on a link in a document of notes.
 
-![Extract URL Content](https://www.macdrifter.com/uploads/2021/11/2021-11-03_08-48-58.png)
+![Extract URL Content](notes/images/c043826fd811a63f72d6b2e7e4744bf8_MD5.png)
 
 The Local Images plugin retrieves a copy of every image linked in the document and stores them in the Obsidian attachments directory and updates the images links with new local links. That means if I paste in [an image from the internet](https://img.huffingtonpost.com/asset/5d02d614210000dc18f2057a.jpeg?ops=scalefit_630_noupscale) I can easily update the Obsidian note to replace the remote image link with a local Obsidian copy.
 
 The plugin turns converts the image link from this:
 
-![Before Local Image](https://www.macdrifter.com/uploads/2021/11/2021-11-03_08-47-53.png)
+![Before Local Image](notes/images/89e71bf2552623898a61d254566f4fbe_MD5.png)
 
 To this local version:
 
-![After Local Image](https://www.macdrifter.com/uploads/2021/11/2021-11-03_08-48-44.png)
+![After Local Image](notes/images/50b1d9393207b5c7bcb98664aa440bde_MD5.png)
 
 There are a couple of caveats with the Local Image plugin. First, it renames image files using a GUID. This avoids overwriting image files.
 
