@@ -1,0 +1,2 @@
+# [gentrygibson – The Buccaneer's Bounty](https://thebuccaneersbounty.wordpress.com/author/gentrygibson/)
+Oh noes, a delayed roundup! This is my roundup, featuring new discoveries and insights, for the month of September.
