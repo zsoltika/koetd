@@ -1,2 +1,0 @@
-# [Tutorials – The Buccaneer's Bounty](https://thebuccaneersbounty.wordpress.com/category/tutorials/)
-Learn how to create your own book tracker in Obsidian using Templates, QuickAdd, MetaEdit, and Kanban Board plugins!

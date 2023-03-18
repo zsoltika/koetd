@@ -1,1 +1,0 @@
-# [Obsidian](https://obsidian.md/)
